@@ -21,6 +21,14 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/chong2vv/YDToolBox.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '13.0'
+  s.pod_target_xcconfig = {
+'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'x86_64 armv7 arm64',
+'VALID_ARCHS' => 'x86_64 armv7 arm64',
+}
+s.user_target_xcconfig = {
+'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'x86_64 armv7 arm64',
+'VALID_ARCHS' => 'x86_64 armv7 arm64',
+}
   s.static_framework = true
   s.requires_arc = true
   s.source_files = 'YDToolBox/Classes/**/*'
