@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.summary          = 'YDTools box'
 
   s.description      = <<-DESC
-  包含YDPreventCrash、YDLogger等工具的集合
+  包含YDPreventCrash、YDLogger、YDRouter等工具的集合
                        DESC
 
   s.homepage         = 'https://github.com/chong2vv/YDToolBox'

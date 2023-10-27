@@ -38,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		04DB6BE0D0DB648CDE5C6DDE /* Pods_YDToolBox_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YDToolBox_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		15B875D02AEB96A800F3476B /* YDToolBox.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDToolBox.h; sourceTree = "<group>"; };
 		1C816F2C651BA4020ABFE269 /* Pods-YDToolBox_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YDToolBox_Tests.release.xcconfig"; path = "Target Support Files/Pods-YDToolBox_Tests/Pods-YDToolBox_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* YDToolBox_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YDToolBox_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -62,11 +63,11 @@
 		7C179A07FB10927679420D6D /* Pods-YDToolBox_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YDToolBox_Tests.debug.xcconfig"; path = "Target Support Files/Pods-YDToolBox_Tests/Pods-YDToolBox_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A471689DD52456E7E75B42E0 /* Pods-YDToolBox_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YDToolBox_Example.debug.xcconfig"; path = "Target Support Files/Pods-YDToolBox_Example/Pods-YDToolBox_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		A532960482F420736E4199D3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		A532960482F420736E4199D3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		AAF1C2609CD99B6E01F19291 /* Pods-YDToolBox_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YDToolBox_Example.release.xcconfig"; path = "Target Support Files/Pods-YDToolBox_Example/Pods-YDToolBox_Example.release.xcconfig"; sourceTree = "<group>"; };
 		AC59FF56B6EC142C936E9C1F /* Pods_YDToolBox_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YDToolBox_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AC797615886F01472939B02C /* YDToolBox.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = YDToolBox.podspec; path = ../YDToolBox.podspec; sourceTree = "<group>"; };
-		FECF2ABD86677FDD0B3CF3BC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		AC797615886F01472939B02C /* YDToolBox.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = YDToolBox.podspec; path = ../YDToolBox.podspec; sourceTree = "<group>"; };
+		FECF2ABD86677FDD0B3CF3BC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,9 +96,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		15B875CB2AEB968B00F3476B /* YDToolBox */ = {
+			isa = PBXGroup;
+			children = (
+				15B875CC2AEB968B00F3476B /* Classes */,
+				15B875CE2AEB968B00F3476B /* Assets */,
+			);
+			name = YDToolBox;
+			path = ../YDToolBox;
+			sourceTree = "<group>";
+		};
+		15B875CC2AEB968B00F3476B /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				15B875D02AEB96A800F3476B /* YDToolBox.h */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		15B875CE2AEB968B00F3476B /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
+				15B875CB2AEB968B00F3476B /* YDToolBox */,
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F593195388D20070C39A /* Example for YDToolBox */,
 				6003F5B5195388D20070C39A /* Tests */,
@@ -193,7 +220,6 @@
 				7C179A07FB10927679420D6D /* Pods-YDToolBox_Tests.debug.xcconfig */,
 				1C816F2C651BA4020ABFE269 /* Pods-YDToolBox_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -249,6 +275,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = wangyuandong;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = C3V5PUXTCL;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -259,6 +288,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -551,6 +581,7 @@
 			baseConfigurationReference = A471689DD52456E7E75B42E0 /* Pods-YDToolBox_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = C3V5PUXTCL;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YDToolBox/YDToolBox-Prefix.pch";
 				INFOPLIST_FILE = "YDToolBox/YDToolBox-Info.plist";
@@ -567,6 +598,7 @@
 			baseConfigurationReference = AAF1C2609CD99B6E01F19291 /* Pods-YDToolBox_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = C3V5PUXTCL;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YDToolBox/YDToolBox-Prefix.pch";
 				INFOPLIST_FILE = "YDToolBox/YDToolBox-Info.plist";
