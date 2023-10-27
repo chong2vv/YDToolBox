@@ -9,34 +9,34 @@
 Pod::Spec.new do |s|
   s.name             = 'YDToolBox'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of YDToolBox.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.summary          = 'YDTools box'
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  包含YDPreventCrash、YDLogger等工具的集合
                        DESC
 
-  s.homepage         = 'https://github.com/wangyuandong/YDToolBox'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://github.com/chong2vv/YDToolBox'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'wangyuandong' => 'chong2vv@gmail.com' }
   s.source           = { :git => 'https://github.com/wangyuandong/YDToolBox.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '10.0'
-
+  s.static_framework = true
+  s.requires_arc = true
   s.source_files = 'YDToolBox/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'YDToolBox' => ['YDToolBox/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'YDSafeThread'
+  s.dependency 'YDPreventCrash'
+  s.dependency 'YDLogger'
+  s.dependency 'YDMonitor'
+  s.dependency 'YDUtilKit'
+  s.dependency 'YDNetworkManager'
+  s.dependency 'YDAuthorizationUtil'
+  s.dependency 'YDFileManager'
+  s.dependency 'YDImageService'
+  s.dependency 'YDClearCacheService'
+  s.dependency 'YDSVProgressHUD'
+  s.dependency 'YDBlockKit'
+  s.dependency 'YDRouter'
+  s.dependency 'YDPreLoader'
+  s.dependency 'YDAlertAction'
 end
